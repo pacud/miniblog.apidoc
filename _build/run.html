@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Run &mdash; miniblog 0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="miniblog 0 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">miniblog 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-miniblog.run">
+<span id="run"></span><h1>1. Run<a class="headerlink" href="#module-miniblog.run" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="miniblog.run.add_post">
+<tt class="descclassname">miniblog.run.</tt><tt class="descname">add_post</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/miniblog/run.html#add_post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#miniblog.run.add_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>displays add_post.html or add the post and displays it</p>
+<p>if the method is POST, calls add_post and gets the id back to display the post
+else displays add_post.html which contains the &#8220;new post&#8221; form</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="miniblog.run.index">
+<tt class="descclassname">miniblog.run.</tt><tt class="descname">index</tt><big>(</big><em>page_number=0</em><big>)</big><a class="reference internal" href="_modules/miniblog/run.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#miniblog.run.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>home page in charge of displaying posts.</p>
+<p>displays 5 posts max ordered by date, most recent first.
+:params page_number: optional chose which page to display.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="miniblog.run.login">
+<tt class="descclassname">miniblog.run.</tt><tt class="descname">login</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/miniblog/run.html#login"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#miniblog.run.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs in if the form is correctly filled. Also displays the form.</p>
+<p>when not displaying the form, checks for the Authentication before updating the session.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="miniblog.run.logout">
+<tt class="descclassname">miniblog.run.</tt><tt class="descname">logout</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/miniblog/run.html#logout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#miniblog.run.logout" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs out</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="miniblog.run.show_post">
+<tt class="descclassname">miniblog.run.</tt><tt class="descname">show_post</tt><big>(</big><em>post_id</em><big>)</big><a class="reference internal" href="_modules/miniblog/run.html#show_post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#miniblog.run.show_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>show the post with the given post_id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params post_id:</th><td class="field-body">post_id in the mongo database</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/run.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">miniblog 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, pacud.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
